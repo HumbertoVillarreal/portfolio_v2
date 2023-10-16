@@ -1,0 +1,166 @@
+/* FONTS */
+
+/* General Stuff */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Menu */
+nav{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 5%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    background-color: rgb(238, 130, 238, .8);
+    animation-name: menu_unhover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav li{
+    margin: 50px 0px 50px 0px;
+}
+nav:hover{
+    animation-name: menu_hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.row{
+    margin-top: 100px;
+}
+.me_pic{
+    text-align: center;
+    padding: 20px;
+}
+.me_pic img{
+    border-radius: 100px;
+}
+.desc{
+    font-size: large;
+}
+.me_pic{
+    width: 100%;
+
+}
+#desc{
+    background-color: rgb(255, 235, 205, .8);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px white;
+}
+
+/* Content */
+#content{
+    float: right;
+    top: 0px;
+    width: 90%;
+}
+.title-container {
+    width: 100%;
+    text-align: center;
+}
+.title-container h1{
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 10px 0px 10px 0px;
+}
+#desc{
+    width: 100%;
+    margin: 0 auto;
+}
+#desc img{
+    margin: auto;
+}
+
+/* Carrusel */
+.slider-section img{
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.show-images{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-carousel{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 8px 32px 0 black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.carruseles {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.slider-section{
+    width: calc(100% / 3);
+    height: 100%;
+}
+.btn-left, .btn-right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    background-color: transparent;
+    border-radius: 20%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+.btn-left{
+    left: 10px;
+}
+.btn-right{
+    right: 10px;
+}
+.btn-left:hover, .btn-right:hover{
+    font-weight: bold;
+    color: black;
+}
+
+/* Skills */
+#skill_nav{
+    height: 0px;
+    height: 600px;
+    border-radius: 10px;
+    margin-top: 300px;
+    background-color: rgb(255, 235, 205, .8);
+    box-shadow: 0px 3px 10px white;
+}
+
+/* ANIMATIONS */
+@keyframes menu_hover {
+    0%{
+        width: 5%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+@keyframes menu_unhover {
+    0%{
+        width: 10%;
+    }
+    100%{
+        width: 5%;
+    }
+}
