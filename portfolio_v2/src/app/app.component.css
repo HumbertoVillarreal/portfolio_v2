@@ -34,6 +34,10 @@ nav:hover{
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
+.icon:hover{
+    scale: 1.2;
+}
+
 .row{
     margin-top: 100px;
 }
@@ -79,6 +83,9 @@ nav:hover{
 }
 #desc img{
     margin: auto;
+}
+#desc p{
+    margin: 15px 0px 15px 0px;
 }
 
 /* Carrusel */
