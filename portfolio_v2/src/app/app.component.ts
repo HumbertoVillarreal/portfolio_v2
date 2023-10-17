@@ -24,6 +24,9 @@ export class AppComponent implements OnInit, AfterViewInit{
       this.imgNum = elements.length;
       setInterval(() => this.moveToRight(), 3000);
     });
+
+    let bg_sound:any = document.querySelector("bg_sound");
+    bg_sound.play()
   }
 
   ngAfterViewInit(): void {
