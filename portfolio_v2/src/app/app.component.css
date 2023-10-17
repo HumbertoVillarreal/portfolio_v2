@@ -39,7 +39,7 @@ nav:hover{
 }
 
 .row{
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .me_pic{
     text-align: center;
@@ -96,7 +96,7 @@ nav:hover{
     border-radius: 15px;
 }
 .show-images{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
